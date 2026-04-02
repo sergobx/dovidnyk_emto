@@ -1,0 +1,33 @@
+/* Основні стилі для меню */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4a261; /* Колір при наведенні */
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Тут зазвичай додається JS для бургер-меню */
+    }
+}
