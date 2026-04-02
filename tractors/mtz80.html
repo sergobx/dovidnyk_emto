@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Довідник тракторів</title>
+  <head>
+    <title>Характеристики тракторів</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+<div id="header"></div>
+<script>
+fetch('header.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+</script>
   <style>
     body {
       font-family: Arial, sans-serif;
