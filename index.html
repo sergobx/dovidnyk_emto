@@ -13,19 +13,78 @@ fetch('header.html')
   });
 </script>
   <body>
-      <h1 class="title">Характеристики тракторів</h1>
-      <p>ХТЗ-150К</p>
-      <p>ХТЗ-150</p>
-      <p>МТЗ-80</p>
-      <p>МТЗ-82</p>
-      <p>ХТЗ-181</p>
-    <!---  <p>ХТЗ-150К</p>
-      <p>ХТЗ-150К</p>
-      <p>ХТЗ-150К</p>
-      <p>ХТЗ-150К</p>
-      <p>ХТЗ-150К</p>
-      <p>ХТЗ-150К</p>
-      <p>ХТЗ-150К</p>--->
-      <script src="script.js"></script>
+  <title>Категорії довідника</title>
+    .card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Навчальний довідник</h1>
+  <p>Оберіть категорію</p>
+</header>
+
+<div class="container">
+  <div class="grid">
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/">
+        <img src="images/tractors.jpg" alt="Трактори">
+        Характеристики тракторів
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/sgm/">
+        <img src="images/sgm.jpg" alt="Сільськогосподарські машини">
+        Характеристики сільськогосподарських машин
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/cars/">
+        <img src="images/cars.jpg" alt="Автомобілі">
+        Характеристики автомобілів
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/vlastyvosti/">
+        <img src="images/mta.jpg" alt="Розрахунок МТА">
+        Розрахунок МТА
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/materials/">
+        <img src="images/materials.jpg" alt="Матеріали">
+        Характеристики матеріалів
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/ekonom/">
+        <img src="images/econom.jpg" alt="Економіка">
+        Економічна частина
+      </a>
+    </div>
+
+  </div>
+</div>
+
   </body>
 </html>
