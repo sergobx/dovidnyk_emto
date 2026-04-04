@@ -2,12 +2,12 @@
 <html>
   <head>
     <title>Навчальний довідник з ЕМТО</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://sergobx.github.io/dovidnyk_emto/styles.css" />
   </head>
 
   <div id="header"></div>
 <script>
-fetch('header.html')
+fetch('https://sergobx.github.io/dovidnyk_emto/header.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('header').innerHTML = data;
