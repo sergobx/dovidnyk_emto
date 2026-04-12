@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Розрахунок МТА</title>
+  <style>
+    body {margin:0;font-family:Arial,sans-serif;background:#f4f6f8;color:#333;}
+    header {background:#2c3e50;color:#fff;text-align:center;padding:20px;}
+    .container {max-width:1100px;margin:30px auto;padding:20px;background:#fff;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.1);} 
+    .section {margin-top:25px;} 
+    .section h2 {border-bottom:2px solid #ddd;padding-bottom:5px;} 
+    table {width:100%;border-collapse:collapse;margin-top:10px;} 
+    th,td {border:1px solid #ddd;padding:8px;text-align:center;} 
+    th {background:#ecf0f1;} 
+    input {padding:6px;width:100px;} 
+    button {padding:8px 15px;margin-top:10px;background:#3498db;color:#fff;border:none;border-radius:5px;cursor:pointer;} 
+    button:hover {background:#2980b9;} 
+    .result {margin-top:10px;font-weight:bold;} 
+    footer {text-align:center;padding:20px;color:#777;font-size:14px;} 
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Розрахунок МТА</h1>
+</header>
+
+<div class="container">
+
+  <div class="section">
+    <h2>Введення даних</h2>
+    <table>
+      <tr><th>Параметр</th><th>Значення</th></tr>
+      <tr><td>Потужність трактора, кВт</td><td><input id="power" type="number"></td></tr>
+      <tr><td>Питомі витрати палива, г/кВт·год</td><td><input id="fuelRate" type="number" value="250"></td></tr>
+      <tr><td>Коефіцієнт використання часу</td><td><input id="timeCoef" type="number" step="0.01" value="0.8"></td></tr>
+      <tr><td>Час роботи, год</td><td><input id="time" type="number"></td></tr>
+    </table>
+
+    <button onclick="calculate()">Розрахувати</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <div class="section">
+    <h2>Формули</h2>
+    <p><strong>Годинна витрата палива:</strong></p>
+    <p>G = (Ne × ge) / 1000</p>
+
+    <p><strong>Загальна витрата палива:</strong></p>
+    <p>Q = G × t × k</p>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Навчальний довідник
+</footer>
+
+<script>
+function calculate() {
+  let power = parseFloat(document.getElementById('power').value);
+  let fuelRate = parseFloat(document.getElementById('fuelRate').value);
+  let timeCoef = parseFloat(document.getElementById('timeCoef').value);
+  let time = parseFloat(document.getElementById('time').value);
+
+  if (!power || !fuelRate || !timeCoef || !time) {
+    document.getElementById('result').innerText = 'Введіть всі дані';
+    return;
+  }
+
+  let G = (power * fuelRate) / 1000;
+  let Q = G * time * timeCoef;
+
+  document.getElementById('result').innerText =
+    'Годинна витрата: ' + G.toFixed(2) + ' кг/год | Загальна витрата: ' + Q.toFixed(2) + ' кг';
+}
+</script>
+
+</body>
+</html>
