@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Навчальний довідник з ЕМТО</title>
+    <link rel="stylesheet" href="https://sergobx.github.io/dovidnyk_emto/styles.css" />
+  </head>
+
+  <div id="header"></div>
+<script>
+fetch('https://sergobx.github.io/dovidnyk_emto/header.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+</script>
+
+<body>
+ 
+<h1 align="center">Оберіть модель трактора</h1>
+
+<div class="container">
+  <div class="grid">
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/nh/nh-t5-90s.html">
+        <img src="images/nh-t5-90s.jpg" alt="Трактори New Holland">
+        New Holland T5.90S
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/nh/nh-t7060.html">
+        <img src="images/nh-t7060.jpg" alt="Трактори New Holland">
+        New Holland T7060
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/nh/nh-t8040.html">
+        <img src="images/nh-t8040.jpg" alt="Трактори New Holland">
+        New Holland T8040
+      </a>
+    </div>
+ 
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/nh/nh-t6050.html">
+        <img src="images/nh-t6050.jpg" alt="Трактори New Holland">
+        New Holland T6050
+      </a>
+    </div>
+
+  </div>
+</div>
+
+  </body>
+</html>
