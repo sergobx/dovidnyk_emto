@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Навчальний довідник з ЕМТО</title>
+    <link rel="stylesheet" href="https://sergobx.github.io/dovidnyk_emto/styles.css" />
+  </head>
+
+  <div id="header"></div>
+<script>
+fetch('https://sergobx.github.io/dovidnyk_emto/header.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+</script>
+
+<body>
+ 
+<h1 align="center">Оберіть модель трактора</h1>
+
+<div class="container">
+  <div class="grid">
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/case/maxxum-115.html">
+        <img src="images/maxxum-115.jpg" alt="Трактори Case IH">
+        Case IH Maxxum 115
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/case/maxxum-145.html">
+        <img src="images/maxxum-145.jpg" alt="Трактори Case IH">
+        Case IH Maxxum 145
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/case/magnum-8940.html">
+        <img src="images/magnum-8940.jpg" alt="Трактори Case IH">
+        Case IH Magnum 8940
+      </a>
+    </div>
+ 
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/case/magnum-250.html">
+        <img src="images/magnum-250.jpg" alt="Трактори Case IH">
+        Case IH Magnum 250
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/case/magnum-340.html">
+        <img src="images/magnum-340.jpg" alt="Трактори Case IH">
+        Case IH Magnum 340
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/case/puma-150.html">
+        <img src="images/puma-150.jpg" alt="Трактори Case IH">
+        Case IH Puma 150
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/case/puma-240.html">
+        <img src="images/puma-240.jpg" alt="Трактори Case IH">
+        Case IH Puma 240
+      </a>
+    </div>
+
+  </div>
+</div>
+
+  </body>
+</html>
