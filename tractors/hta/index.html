@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Навчальний довідник з ЕМТО</title>
+    <link rel="stylesheet" href="https://sergobx.github.io/dovidnyk_emto/styles.css" />
+  </head>
+
+  <div id="header"></div>
+<script>
+fetch('https://sergobx.github.io/dovidnyk_emto/header.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+</script>
+
+<body>
+ 
+<h1 align="center">Оберіть модель трактора</h1>
+
+<div class="container">
+  <div class="grid">
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/hta/hta-200-10.html">
+        <img src="images/hta-200-10.jpg" alt="Трактори ХТА">
+        ХТА-200-10
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/hta/hta-220-10.html">
+        <img src="images/hta-220-10.jpg" alt="Трактори ХТА">
+        ХТА-220-10
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/hta/hta-250-40.html">
+        <img src="images/hta-250-40.jpg" alt="Трактори ХТА">
+        ХТА-250-40
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/hta/hta-300-03.html">
+        <img src="images/hta-300-03.jpg" alt="Трактори ХТА">
+        ХТА-300-03
+      </a>
+    </div>
+
+  </div>
+</div>
+
+  </body>
+</html>
