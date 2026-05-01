@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Навчальний довідник з ЕМТО</title>
+    <link rel="stylesheet" href="https://sergobx.github.io/dovidnyk_emto/styles.css" />
+  </head>
+
+  <div id="header"></div>
+<script>
+fetch('https://sergobx.github.io/dovidnyk_emto/header.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+</script>
+
+<body>
+ 
+<h1 align="center">Оберіть модель трактора</h1>
+
+<div class="container">
+  <div class="grid">
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/cat/cat-mt445b.html">
+        <img src="images/cat-mt445b.jpg" alt="Трактори CAT Challenger">
+        CAT Challenger MT445B
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/cat/cat-mt545b.html">
+        <img src="images/cat-mt545b.jpg" alt="Трактори CAT Challenger">
+        CAT Challenger MT545B
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/cat/cat-mt645d.html">
+        <img src="images/cat-mt645d.jpg" alt="Трактори CAT Challenger">
+        CAT Challenger MT645D
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/cat/cat-mt765c.html">
+        <img src="images/cat-mt765c.jpg" alt="Трактори CAT Challenger">
+        CAT Challenger MT765C
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/cat/cat-mt865b.html">
+        <img src="images/cat-mt865b.jpg" alt="Трактори CAT Challenger">
+        CAT Challenger MT865B
+      </a>
+    </div>
+
+  </div>
+</div>
+
+  </body>
+</html>
