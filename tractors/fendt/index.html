@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Навчальний довідник з ЕМТО</title>
+    <link rel="stylesheet" href="https://sergobx.github.io/dovidnyk_emto/styles.css" />
+  </head>
+
+  <div id="header"></div>
+<script>
+fetch('https://sergobx.github.io/dovidnyk_emto/header.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+</script>
+
+<body>
+ 
+<h1 align="center">Оберіть модель трактора</h1>
+
+<div class="container">
+  <div class="grid">
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/fendt/fendt-312-vario-g4.html">
+        <img src="images/fendt-312-vario-g4.jpg" alt="Трактори Fendt">
+        Fendt 312 Vario Gen4
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/fendt/fendt-513-vario-g4.html">
+        <img src="images/fendt-513-vario-g4.jpg" alt="Трактори Fendt">
+        Fendt 513 Vario Gen4
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/fendt/fendt-516-vario-g4.html">
+        <img src="images/fendt-516-vario-g4.jpg" alt="Трактори Fendt">
+        Fendt 516 Vario Gen4
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/fendt/fendt-718-vario.html">
+        <img src="images/fendt-718-vario.jpg" alt="Трактори Fendt">
+        Fendt 718 Vario
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/fendt/fendt-724-vario.html">
+        <img src="images/fendt-724-vario.jpg" alt="Трактори Fendt">
+        Fendt 724 Vario
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/fendt/fendt-828-vario.html">
+        <img src="images/fendt-828-vario.jpg" alt="Трактори Fendt">
+        Fendt 828 Vario
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/fendt/fendt-938-vario-mt.html">
+        <img src="images/fendt-938-vario-mt.jpg" alt="Трактори Fendt">
+        Fendt 938 Vario MT
+      </a>
+    </div>
+
+  </div>
+</div>
+
+  </body>
+</html>
