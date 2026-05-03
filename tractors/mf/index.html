@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Навчальний довідник з ЕМТО</title>
+    <link rel="stylesheet" href="https://sergobx.github.io/dovidnyk_emto/styles.css" />
+  </head>
+
+  <div id="header"></div>
+<script>
+fetch('https://sergobx.github.io/dovidnyk_emto/header.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+</script>
+
+<body>
+ 
+<h1 align="center">Оберіть модель трактора</h1>
+
+<div class="container">
+  <div class="grid">
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/mf/mf-4708.html">
+        <img src="images/mf-4708.jpg" alt="Трактори Massey Ferguson">
+        Massey Ferguson 4708
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/mf/mf-6713.html">
+        <img src="images/mf-6713.jpg" alt="Трактори Massey Ferguson">
+        Massey Ferguson 6713
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/mf/mf-7715.html">
+        <img src="images/mf-7715.jpg" alt="Трактори Massey Ferguson">
+        Massey Ferguson 7715
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/mf/mf-8480.html">
+        <img src="images/mf-8480.jpg" alt="Трактори Massey Ferguson">
+        Massey Ferguson 8480
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/mf/mf-8735.html">
+        <img src="images/mf-8735.jpg" alt="Трактори Massey Ferguson">
+        Massey Ferguson 8735
+      </a>
+    </div>
+
+  </div>
+</div>
+
+  </body>
+</html>
