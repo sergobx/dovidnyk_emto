@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Навчальний довідник з ЕМТО</title>
+    <link rel="stylesheet" href="https://sergobx.github.io/dovidnyk_emto/styles.css" />
+  </head>
+
+  <div id="header"></div>
+<script>
+fetch('https://sergobx.github.io/dovidnyk_emto/header.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+</script>
+
+<body>
+ 
+<h1 align="center">Оберіть модель трактора</h1>
+
+<div class="container">
+  <div class="grid">
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/landini/landpower-125.html">
+        <img src="images/landpower-125.jpg" alt="Трактори Landini">
+        Landini Landpower 125
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/landini/landpower-135.html">
+        <img src="images/landpower-135.jpg" alt="Трактори Landini">
+        Landini Landpower 135
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/landini/landpower-145.html">
+        <img src="images/landpower-145.jpg" alt="Трактори Landini">
+        Landini Landpower 145
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/landini/powerfarm-90.html">
+        <img src="images/powerfarm-90.jpg" alt="Трактори Landini">
+        Landini Powerfarm 90
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/landini/powerfarm-110.html">
+        <img src="images/powerfarm-110.jpg" alt="Трактори Landini">
+        Landini Powerfarm 110
+      </a>
+    </div>
+
+  </div>
+</div>
+
+  </body>
+</html>
