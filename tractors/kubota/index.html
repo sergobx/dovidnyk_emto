@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Навчальний довідник з ЕМТО</title>
+    <link rel="stylesheet" href="https://sergobx.github.io/dovidnyk_emto/styles.css" />
+  </head>
+
+  <div id="header"></div>
+<script>
+fetch('https://sergobx.github.io/dovidnyk_emto/header.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+</script>
+
+<body>
+ 
+<h1 align="center">Оберіть модель трактора</h1>
+
+<div class="container">
+  <div class="grid">
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/kubota/kubota-m100gx.html">
+        <img src="images/kubota-m100gx.jpg" alt="Трактори Kubota">
+        Kubota M100GX
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/kubota/kubota-m110gx.html">
+        <img src="images/kubota-m110gx.jpg" alt="Трактори Kubota">
+        Kubota M110GX
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/kubota/kubota-m5111.html">
+        <img src="images/kubota-m5111.jpg" alt="Трактори Kubota">
+        Kubota M5111
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/kubota/kubota-m7131.html">
+        <img src="images/kubota-m7131.jpg" alt="Трактори Kubota">
+        Kubota M7131
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/kubota/kubota-m7171.html">
+        <img src="images/kubota-m7171.jpg" alt="Трактори Kubota">
+        Kubota M7171
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/kubota/kubota-m9540.html">
+        <img src="images/kubota-m9540.jpg" alt="Трактори Kubota">
+        Kubota M9540
+      </a>
+    </div>
+
+  </div>
+</div>
+
+  </body>
+</html>
