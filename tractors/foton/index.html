@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Навчальний довідник з ЕМТО</title>
+    <link rel="stylesheet" href="https://sergobx.github.io/dovidnyk_emto/styles.css" />
+  </head>
+
+  <div id="header"></div>
+<script>
+fetch('https://sergobx.github.io/dovidnyk_emto/header.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  });
+</script>
+
+<body>
+ 
+<h1 align="center">Оберіть модель трактора</h1>
+
+<div class="container">
+  <div class="grid">
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/foton/foton-ft-454.html">
+        <img src="images/foton-ft-454.jpg" alt="Трактори Foton Lovol">
+        Foton Lovol FT 454
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/foton/foton-ft-824.html">
+        <img src="images/foton-ft-824.jpg" alt="Трактори Foton Lovol">
+        Foton Lovol FT 824
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/foton/foton-ft-1054.html">
+        <img src="images/foton-ft-1054.jpg" alt="Трактори Foton Lovol">
+        Foton Lovol FT 1054
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="https://sergobx.github.io/dovidnyk_emto/tractors/foton/foton-ft-1654.html">
+        <img src="images/foton-ft-1654.jpg" alt="Трактори Foton Lovol">
+        Foton Lovol TG 1654
+      </a>
+    </div>
+
+  </div>
+</div>
+
+  </body>
+</html>
